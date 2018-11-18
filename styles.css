@@ -128,7 +128,7 @@ a:hover#menu-icon {
 
 
 /* Mobile Styles */
-@media only screen and (max-width: 975px) {
+@media only screen and (max-device-width: 975px) {
     #menu-icon {
 
 		display:inline-block;
