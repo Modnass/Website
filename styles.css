@@ -72,14 +72,18 @@ body{
 .Pictures{
 	display:flex;
 	flex-direction: column;
-	max-width: 500px;
+	
 
 }
 
 .Dreams,
 .Nightmare,
-.PlusMinus
+.PlusMinus,
+.Shaver
 {
+  max-width:100%;
+  height:auto;
+  
 	/* padding-bottom:5em; */
 }
 
@@ -126,11 +130,80 @@ a:hover#menu-icon {
 
 }
 
+@media only screen and (max-width: 975px) {
+   
+.Content{
+  width:100%;
+  }
+  
+  .Dreams,
+  .Nightmare,
+  .PlusMinus,
+  .Shaver
+{
+  max-width:100%;
+  height:auto;
+  }
+  
+  #menu-icon {
 
+      
+		display:inline-block;
+
+	}
+    
+    .Menu {
+        position: static;
+    }
+
+	nav ul, nav:active ul { 
+
+		/* display: none; */
+		position: absolute;
+		padding: 20px;
+		background: #fff;
+		border: 5px solid #444;
+		right: 20px;
+		top: 60px;
+		width: 300;
+		border-radius: 4px 0 4px 4px;
+
+	}
+
+	nav li {
+
+		text-align: center;
+		width: 100%;
+		padding: 10px 0;
+		margin: 0;
+
+	}
+
+	nav:hover ul {
+
+		display: block;
+
+	}
+}
 /* Mobile Styles */
 @media only screen and (max-device-width: 975px) {
-    #menu-icon {
+    
+.Content{
+  width:100%;
+  }
+  
+  .Dreams,
+  .Nightmare,
+  .PlusMinus,
+  .Shaver
+{
+  max-width:100%;
+  height:auto;
+  }
+  
+  #menu-icon {
 
+      
 		display:inline-block;
 
 	}
