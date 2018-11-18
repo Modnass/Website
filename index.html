@@ -3,9 +3,12 @@
   <head>
     <meta charset='UTF-8'/>
     <title>Finn Meier</title>
+    <link rel='stylesheet' href='fixed-nav/styles.css'/>
     <link rel='stylesheet' href='styles.css'/>
+    
 		<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="js/responsive-nav.js"></script>
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 
   </head>
@@ -14,68 +17,61 @@
 
   <body id="one">
   
-        <div class="Content">
-                
-			
-			<div class="Pictures">
-            
-            <div style="position:fixed;auto;">
-                <div id="test">
-                  
-               </div>
-                <div class="Menu" id="Menu">
-            
-                    
-				</div>
-            </div>
-				<p id="" class="Projecttext">Dreams </p><br>
-				<a href="dreams/dreams.html"><img class="Dreams" src="images/Dreams1.jpg" /></a>
-				<a href="dreams/dreams.html"><img class="Dreams" src="images/Dreams3.jpg" /></a>
-				<a href="dreams/dreams.html"><img class="Dreams" src="images/Dreams2.jpg" /></a>
+      <div class="Content">
+        
+        
+			  <div class="Pictures">
+              <div id="nav-mob" class="nav-mob">
+              </div>
+          
+              <div class="Menu" id="nav">
+				      </div>
+          
+           
+          
+            <p id="" class="Projecttext">Dreams </p><br>
+            <a href="dreams/dreams.html"><img class="Dreams" src="images/Dreams1.jpg" /></a>
+            <a href="dreams/dreams.html"><img class="Dreams" src="images/Dreams3.jpg" /></a>
+            <a href="dreams/dreams.html"><img class="Dreams" src="images/Dreams2.jpg" /></a>
 
 
-			<p id="two" class="Projecttext2">Material Nightmare</p><br>
-				<a href="nightmare/nightmare.html"><img class="Nightmare" src="images/Tabu2.jpg"/></a>
-				<a href="nightmare/nightmare.html"><img class="Nightmare" src="images/Tabu4.jpg"/></a>
-				<a href="nightmare/nightmare.html"><img class="Nightmare" src="images/Tabu1.jpg"/></a>
+            <p id="two" class="Projecttext2">Material Nightmare</p><br>
+            <a href="nightmare/nightmare.html"><img class="Nightmare" src="images/Tabu2.jpg"/></a>
+            <a href="nightmare/nightmare.html"><img class="Nightmare" src="images/Tabu4.jpg"/></a>
+            <a href="nightmare/nightmare.html"><img class="Nightmare" src="images/Tabu1.jpg"/></a>
 
-				<p id="three" class="Projecttext2">PlusMinus</p><br>
-				<a href="plusminus/plusminus.html"> <img class="PlusMinus" src="images/Plusminus1.jpg"/> </a>
+            <p id="three" class="Projecttext2">PlusMinus</p><br>
+            <a href="plusminus/plusminus.html"> <img class="PlusMinus" src="images/Plusminus1.jpg"/> </a>
 
-				<p id="four" class="Projecttext2">Shaver</p><br>
-				<a href="shaver/shaver.html"><img class="Shaver" src="images/Razor1.jpg"/></a>
+            <p id="four" class="Projecttext2">Shaver</p><br>
+            <a href="shaver/shaver.html"><img class="Shaver" src="images/Razor1.jpg"/></a>
 
 
-			</div>
-</div>
+			  </div>
+    </div>
 
 
   </body>
 
 <script>
-  $( "#Menu" ).load( "./nav.html", function() {
-     $('a[href*=#]:not([href=#])').click(function() {
-        if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'')
-            || location.hostname == this.hostname) {
-
-            var target = $(this.hash);
-            target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
-               if (target.length) {
-                 $('html,body').animate({
-                     scrollTop: target.offset().top
-                }, 1000);
-                return false;
+$( "#nav-mob" ).load( "./nav-mob.html", function() {
+    $( "#nav" ).load( "./nav.html" , function() {
+      
+        $('a[href*=#]:not([href=#])').click(function() {
+            if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'')
+                || location.hostname == this.hostname) {
+                var target = $(this.hash);
+                target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+                   if (target.length) {
+                     $('html,body').animate({
+                         scrollTop: target.offset().top - 40
+                    }, 900);
+                    return false;
+                }
             }
-        }
+       });
     });
-  });
+});
 </script>
-<script>
-
-
-
-</script>
-
-
 
 </html>
