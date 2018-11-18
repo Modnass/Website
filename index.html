@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang='en'>
+  <head>
+    <meta charset='UTF-8'/>
+    <title>Finn Meier</title>
+    <link rel='stylesheet' href='styles.css'/>
+		<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+
+  </head>
+
+
+
+  <body id="one">
+		<div class="Content">
+
+			<div class="Menu">
+				<div id="MenuTitle"><a href="../index.html#one">
+					Finn Meier
+				</a></div>
+				<div class="MenuObject">
+					<ul>
+						<li id="header"><a href="#one">Work</a></li>
+						<div class="MenuItems"><li><a href="#one">Dreams</a></li>
+						<li><a href="#two">Material Nightmare</a></li>
+						<li><a href="#three">PlusMinus</a></li>
+						<li><a href="#four">Shaver</a></li>
+					</div>
+						<li id="header2"><a href="about/about.html">About</li></a>
+					</ul>
+				</div>
+			</div>
+			<div class="Pictures">
+
+				<p id="" class="Projecttext">Dreams </p><br>
+				<a href="dreams/dreams.html"><img class="Dreams" src="images/Dreams1.jpg" style="max-width:500px" /></a>
+				<a href="dreams/dreams.html"><img class="Dreams" src="images/Dreams3.jpg" style="max-width:500px" /></a>
+				<a href="dreams/dreams.html"><img class="Dreams" src="images/Dreams2.jpg" style="max-width:500px" /></a>
+
+
+			<p id="two" class="Projecttext2">Material Nightmare</p><br>
+				<a href="nightmare/nightmare.html"><img class="Nightmare" src="images/Tabu2.jpg" style="max-width:500px" /></a>
+				<a href="nightmare/nightmare.html"><img class="Nightmare" src="images/Tabu4.jpg" style="max-width:500px" /></a>
+				<a href="nightmare/nightmare.html"><img class="Nightmare" src="images/Tabu1.jpg" style="max-width:500px" /></a>
+
+				<p id="three" class="Projecttext2">PlusMinus</p><br>
+				<a href="plusminus/plusminus.html"><img id=""class="PlusMinus" src="images/Plusminus1.jpg" style="max-width:500px" /></a>
+
+				<p id="four" class="Projecttext2">Shaver</p><br>
+				<a href="shaver/shaver.html"><img id="" class="Shaver" src="images/Razor1.jpg" style="max-width:500px" /></a>
+
+
+			</div>
+</div>
+
+
+  </body>
+
+
+<script>
+
+$('a[href*=#]:not([href=#])').click(function() {
+    if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'')
+        || location.hostname == this.hostname) {
+
+        var target = $(this.hash);
+        target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+           if (target.length) {
+             $('html,body').animate({
+                 scrollTop: target.offset().top
+            }, 1000);
+            return false;
+        }
+    }
+});
+
+</script>
+
+
+
+</html>

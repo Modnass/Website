@@ -1,0 +1,107 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+	/* border: 1px solid; */
+}
+
+.MenuItems a:link,a:visited{
+	text-decoration: none;
+	color:#bababa;
+}
+
+.MenuItems a:hover{
+	color:#000000;
+}
+
+a:hover{
+	cursor: crosshair;
+}
+
+body{
+	display:flex;
+	justify-content: center;
+}
+
+.Content{
+	display:flex;
+	font-family: 'Roboto', sans-serif;
+	margin-top:70px;
+}
+
+.Menu{
+	display:flex;
+	flex-direction: column;
+	/* margin-right:5em;
+	margin-left: 6em; */
+	position:fixed;
+	left:5%;
+	top:70px;
+}
+
+#MenuTitle{
+	padding-bottom:1.5em;
+	font-size: 16px;
+	font-weight:500;
+}
+#MenuTitle a,
+#header a,
+#header2 a{
+	text-decoration: none;
+	color: #000000;
+}
+
+#header2 {
+	padding-bottom: 1em;
+	padding-top:1.5em;
+}
+#header{
+	padding-bottom: 1em;
+}
+
+.MenuObject{
+	color:#bababa;
+	font-size: 13px;
+}
+
+.MenuObject ul{
+	line-height: 135%;
+}
+
+.Pictures{
+	display:flex;
+	flex-direction: column;
+	max-width: 500px;
+	padding-top: 2.5em;
+	font-size: 14px;
+	color:#515151;
+
+
+}
+
+.title{
+	width: 205px;
+}
+
+.dreams{
+	padding-bottom:5em;
+}
+
+.MenuObject ul {
+  list-style-type: none;
+}
+
+/* Mobile Styles */
+@media only screen and (max-width: 400px) {
+
+}
+
+/* Tablet Styles */
+@media only screen and (min-width: 401px) and (max-width: 960px) {
+
+}
+
+/* Desktop Styles */
+@media only screen and (min-width: 961px) {
+
+}
