@@ -54,6 +54,18 @@
   </body>
 
 <script>
+var scrollOffset = 0;
+function setOffset(x) {
+    if (x.matches) { // If media query matches
+        scrollOffset = 40;
+    } else {
+        scrollOffset = 0;
+    }
+}
+var mq_mobileScreenWidth = window.matchMedia("(max-width: 640px)")
+setOffset(mq_mobileScreenWidth)
+mq_mobileScreenWidth.addListener(setOffset)
+  
 $( "#nav-mob" ).load( "./nav-mob.html", function() {
     $( "#nav" ).load( "./nav.html" , function() {
       
@@ -64,7 +76,7 @@ $( "#nav-mob" ).load( "./nav-mob.html", function() {
                 target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
                    if (target.length) {
                      $('html,body').animate({
-                         scrollTop: target.offset().top - 40
+                         scrollTop: target.offset().top - scrollOffset
                     }, 900);
                     return false;
                 }

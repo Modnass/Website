@@ -2,7 +2,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-	border: 0px solid;
+	border: 0px solid black;
 }
 
 .MenuItems a:link,a:visited{
@@ -14,9 +14,6 @@
 	color:#000000;
 }
 
-a:hover{
-	cursor: crosshair;
-}
 
 body{
 	display:flex;
@@ -43,7 +40,7 @@ body{
 #MenuTitle{
 	margin-bottom:1.5em;
 	font-size: 16px;
-	font-weight:500;
+	font-weight:bold;
 }
 
 #MenuTitle a,
@@ -95,7 +92,7 @@ a:hover .Dreams {
 }
 
 .Shaver{
-	padding-bottom: 14.5em;
+	padding-bottom: 500px;
 }
 
 .MenuObject ul {
@@ -108,6 +105,7 @@ a:hover .Dreams {
 	color: #bababa;
 	text-decoration: none;
   max-width:500px;
+  margin-left:0px;
 }
 
 .Projecttext2{
@@ -132,7 +130,7 @@ a:hover .Dreams {
 
 
 
-@media only screen and (max-width: 800px) {
+@media only screen and (max-width: 850px) {
   
   .logo {
     display:block;
@@ -157,6 +155,7 @@ a:hover .Dreams {
   }
 .Projecttext{
   padding-top:60px;
+  margin-left:18px;
   }
   
   .Projecttext2{
@@ -202,6 +201,11 @@ a:hover .Dreams {
   max-width:100%;
   height:auto;
   }
+  
+  .Shaver{
+	padding-bottom: 120px;
+}
+  
   
   #menu-icon {
 
