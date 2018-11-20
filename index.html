@@ -54,12 +54,12 @@
   </body>
 
 <script>
-var scrollOffset = -80;
+var scrollOffset = 0;
 function setOffset(x) {
     if (x.matches) { // If media query matches
         scrollOffset = 40;
     } else {
-        scrollOffset = -80;
+        scrollOffset = 0;
     }
 }
 var mq_mobileScreenWidth = window.matchMedia("(max-width: 640px)")
