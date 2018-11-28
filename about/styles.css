@@ -5,28 +5,49 @@
 	/* border: 1px solid; */
 }
 
-.Content a:link,a:visited{
+.MenuItems a:link,a:visited{
 	text-decoration: none;
-	color:#bababa;
+	color:#000;
 }
 
 .MenuItems a:hover{
 	color:#000000;
 }
 
-a:hover{
-	color:#000000 !important;
-}
+
 
 body{
 	display:flex;
 	justify-content: center;
+  flex-direction:column;
 }
 
+  .back{
+    position: fixed;
+    top:0px;
+    left:5%;
+    width: 100%;
+    margin-top:0px;
+    padding-top:0px;
+    background-color: #fff;
+    z-index: 2;
+    height: 80px;
+    max-width:1600px;
+    
+}
+
+.back a{
+  position:relative;
+  top:70px;
+  font-size:1.2em;
+  text-decoration:none;
+  line-height: 20px;
+}
 .Content{
 	display:flex;
 	font-family: 'Roboto', sans-serif;
 	margin-top:70px;
+  justify-content:center;
 }
 
 .Menu{
@@ -68,26 +89,27 @@ body{
 	line-height: 135%;
 }
 
-.About{
+.Pictures{
 	display:flex;
 	flex-direction: column;
 	max-width: 500px;
-	padding-top: 43px;
+	padding-top: 3em;
 	font-size: 14px;
 	color:#515151;
-}
 
-.abouttitle{
-	color:#000000;
-	font-size: 15px;
+
 }
 
 .title{
 	width: 205px;
 }
 
+
+
 .dreams{
 	padding-bottom:5em;
+  width:100%;
+  height:auto;
 }
 
 .MenuObject ul {
@@ -95,16 +117,103 @@ body{
 }
 
 /* Mobile Styles */
-@media only screen and (max-width: 400px) {
+@media only screen and (max-device-width: 400px) {
+  
+  .Content{
+    width:100%;
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+  }
+  .Pictures{
+    padding-top:7em;
+    width:100%;
+    max-width:1000px;
+  }
+  
+  .dreams{
+    width:100%;
+  }
+  
+  .content-text{
+    padding:20px;
+    font-size:34px;
+  
+}
+    .back{
+    position: fixed;
+    top:0px;
+      left:0px;
+    width: 100%;
+    margin-top:0px;
+    padding-top:0px;
+    background-color: #fff;
+    z-index: 2;
+    height: 8em;
+      max-width:none;
+    
+}
+  
+  .back a{
+    top:0.9em;
+    left:18px;
+  font-size:3.5em;
+  text-decoration:none;
+  line-height: 20px;
+}
+  
 
+  
+  
+  
+  
 }
 
 /* Tablet Styles */
-@media only screen and (min-width: 401px) and (max-width: 960px) {
-
+@media only screen and (min-device-width: 401px) and (max-device-width: 960px) {
+  
+ .Content{
+    width:100%;
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+  }
+  
+  .dreams{
+    width:100%;
+    height:auto;
+  }
+  
+  .content-text{
+    padding-left:10px;
+    padding-right:10px;
+  
+}
+  
+      .back{
+    position: fixed;
+    top:0px;
+      left:0px;
+    width: 100%;
+    margin-top:0px;
+    padding-top:0px;
+    background-color: #fff;
+    z-index: 2;
+    height: 5em;
+      max-width:none;
+    
+}
+  
+  .back a{
+    top:0.9em;
+    left:18px;
+  font-size:2em;
+  text-decoration:none;
+  line-height: 20px;
 }
 
 /* Desktop Styles */
 @media only screen and (min-width: 961px) {
 
+}
 }
