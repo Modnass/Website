@@ -61,7 +61,9 @@
       content = [];
       forEach(links, function (i, el) {
         var href = links[i].getAttribute("href").replace("#", "");
-        content.push(document.getElementById(href).offsetTop + 200);
+        if (document.getElementById(href)){
+          content.push(document.getElementById(href).offsetTop + 200);
+        }
       });
     };
 
@@ -143,6 +145,9 @@
 
     // When a navigation item is tapped, select it and begin scrolling
     forEach(links, function (i, el) {
+      if (!links[i].getAttribute("href").startsWith("#")){
+        return
+      }
       links[i].addEventListener("click", function (e) {
         e.preventDefault();
         wasNavigationTapped = true;
@@ -153,9 +158,9 @@
         // Show the URL of the section on the address bar
         var thisID = this.getAttribute("href").replace("#", ""),
           pane = document.getElementById(thisID);
-
+  
         // If the URL isn't "#home", change it
-        if (thisID !== "home") {
+        if (pane && thisID !== "home") {
           pane.removeAttribute("id");
           location.hash = "#" + thisID;
           pane.setAttribute("id", thisID);

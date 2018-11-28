@@ -1,9 +1,10 @@
 <!DOCTYPE html>
-<html lang='en'>
+<html lang="en">
   <head>
-    <meta charset='UTF-8'/>
+    <meta charset="UTF-8"/>
     <title>Finn Meier</title>
-    <link rel='stylesheet' href='styles.css'/>
+    
+    <link rel="stylesheet" href="styles.css"/>
 		<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
 
@@ -12,25 +13,21 @@
 
 
   <body>
+    
+     
+       
 		<div class="Content">
 
-			<div class="Menu">
-				<div id="MenuTitle"><a href="../index.html#one">
-					Finn Meier
-				</a></div>
-				<div class="MenuObject">
-					<ul>
-						<li id="header"><a href="../index.html#one">Work</a></li>
-						<div class="MenuItems">
-						<li><a href="../index.html#one">Dreams</a></li>
-						<li><a href="../index.html#two">Material Nightmare</a></li>
-						<li><a href="../index.html#three">PlusMinus</a></li>
-						<li><a href="../index.html#four">Shaver</a></li>
-					</div>
-						<li id="header2"><a href="/about">About</a></li>
-					</ul>
-				</div>
-			</div>
+			
+     <div class="back">
+        <a  href="/">&lt back</a>
+      </div>
+
+			
+        <div class="Pictures">
+     
+           
+          
 			<div class="About">
 				<p class="abouttitle">Finn Meier - 1990 - Germany<br><br>
 				<a href="mailto:info@finnmeier.com">info@finnmeier.com</a> </p><br><br>
@@ -54,29 +51,12 @@ existence, while crafting elaborate tales in the physical incarnation that are h
 </p>
 			</div>
 </div>
-
+</div>
 
   </body>
 
 
-<script>
 
-$('a[href*=#]:not([href=#])').click(function() {
-    if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'')
-        || location.hostname == this.hostname) {
-
-        var target = $(this.hash);
-        target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
-           if (target.length) {
-             $('html,body').animate({
-                 scrollTop: target.offset().top
-            }, 1000);
-            return false;
-        }
-    }
-});
-
-</script>
 
 
 
