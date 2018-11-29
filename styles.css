@@ -86,7 +86,10 @@ body{
 	/* padding-bottom:5em; */
 }
 
-a:hover .Dreams {
+a:hover .Dreams,
+a:hover .Nightmare,
+a:hover .PlusMinus,
+a:hover .Shaver{
 	opacity: 0.75;
 
 }
@@ -127,7 +130,12 @@ a:hover .Dreams {
   
 }
 
-
+a[href*="instagram.com/"] {
+background:url(glyph-logo_May2016.png) no-repeat left center;
+  background-size:18px;
+padding-left:19px;
+  font-size:40px;
+}
 
 
 @media only screen and (max-width: 850px) {
@@ -145,6 +153,13 @@ a:hover .Dreams {
     color: #000;
     /*float: left;*/
   }
+  
+  a[href*="instagram.com/"] {
+background:url(glyph-logo_May2016.png) no-repeat left center;
+  background-size:18px;
+padding-left:19px;
+  font-size:40px;
+}
   
   .Menu {
         display: none;
@@ -169,15 +184,24 @@ a:hover .Dreams {
     background-color: #fff;
     z-index: 2;
   }
+  
+  
 }
-a[href*="instagram.com/"] {
-background:url(https://twitter.com/favicon.ico) no-repeat left center;
-padding-left:19px;
-}
+
+
+
 
 /* Mobile Styles */
 @media only screen and (max-device-width: 975px) {
 
+  a[href*="instagram.com/"] {
+background:url(glyph-logo_May2016.png) no-repeat left center;
+  background-size:18px;
+    background-position:4%;
+padding-left:30px;
+  font-size:40px;
+}
+  
   .logo {
     display:block;
   position:absolute;
