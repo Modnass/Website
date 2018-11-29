@@ -135,11 +135,18 @@ body{
     width:100%;
   }
   
+  .abouttitle,
+  .text,
   .content-text{
-    padding:20px;
+    padding-left:20px;
+    padding-right:20px;
     font-size:34px;
   
 }
+  
+  .text{
+    padding-top:30px;
+  }
     .back{
     position: fixed;
     top:0px;
@@ -168,6 +175,7 @@ body{
   
   
 }
+
 
 /* Tablet Styles */
 @media only screen and (min-device-width: 401px) and (max-device-width: 960px) {
