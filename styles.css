@@ -86,7 +86,10 @@ body{
 	/* padding-bottom:5em; */
 }
 
-a:hover .Dreams {
+a:hover .Dreams,
+a:hover .Nightmare,
+a:hover .PlusMinus,
+a:hover .Shaver{
 	opacity: 0.75;
 
 }
