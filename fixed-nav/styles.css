@@ -265,6 +265,13 @@ header {
   .nav-collapse ul ul a {
     display: none;
   }
+  
+    a[href*="instagram.com/"] {
+background:url(glyph-logo_May2016.png) no-repeat left center;
+  background-size:18px;
+padding-left:30px;
+  font-size:30px;
+}
 }
 
 
