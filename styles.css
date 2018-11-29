@@ -170,6 +170,10 @@ a:hover .Dreams {
     z-index: 2;
   }
 }
+a[href*="instagram.com/"] {
+background:url(https://twitter.com/favicon.ico) no-repeat left center;
+padding-left:19px;
+}
 
 /* Mobile Styles */
 @media only screen and (max-device-width: 975px) {
