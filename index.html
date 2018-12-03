@@ -40,9 +40,9 @@
 
   
 
-  <body id="one">
+  <body>
   
-      <div class="Content">
+      <div id="one" class="Content">
         
         
 			  <div class="Pictures">
@@ -87,6 +87,16 @@ function setOffset(x) {
         scrollOffset = 0;
     }
 }
+  var scrollOffset = 0;
+function setOffset(x) {
+    if (id="one") { // If media query matches
+        scrollOffset = 100;
+    } else {
+        scrollOffset = 0;
+    }
+}
+  
+  
 var mq_mobileScreenWidth = window.matchMedia("(max-width: 640px)")
 setOffset(mq_mobileScreenWidth)
 mq_mobileScreenWidth.addListener(setOffset)
