@@ -12,7 +12,7 @@
   gtag('config', 'UA-130101100-1');
 </script>    <link rel="stylesheet" href="fixed-nav/styles.css"/>
     <link rel="stylesheet" href="styles.css"/>
-    
+
 		<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
     <script src="js/responsive-nav.js"></script>
@@ -38,38 +38,44 @@
     <meta name="description" content="Objects, artwork and stories by Finn Meier"/>
   </head>
 
-  
+
 
   <body>
-  
-      <div id="one" class="Content">
-        
-        
-			  <div class="Pictures">
+
+      <div  class="Content">
+
+
+			  <div id="" class="Pictures">
               <div id="nav-mob" class="nav-mob">
               </div>
-          
+
               <div class="Menu" id="nav">
 				      </div>
-          
-           
-          
-            <p id="" class="Projecttext">Dreams </p><br>
+
+							<p id="one" class="Projecttext">Rite of Passage </p><br>
+							<a href="riteofpassage/riteofpassage.html"><img class="Dreams" src="images/rop1.jpg" /></a>
+							<a href="riteofpassage/riteofpassage.html"><img class="Dreams" src="images/rop2.jpg" /></a>
+							<a href="riteofpassage/riteofpassage.html"><img class="Dreams" src="images/rop3.jpg" /></a>
+							<a href="riteofpassage/riteofpassage.html"><img class="Dreams" src="images/rop7.jpg" /></a>
+							<a href="riteofpassage/riteofpassage.html"><img class="Dreams" src="images/rop4.jpg" /></a>
+							<a href="riteofpassage/riteofpassage.html"><img class="Dreams" src="images/rop5.jpg" /></a>
+							<a href="riteofpassage/riteofpassage.html"><img class="Dreams" src="images/rop6.jpg" /></a>
+
+
+            <p id="two" class="Projecttext">Dreams </p><br>
             <a href="dreams/dreams.html"><img class="Dreams" src="images/Dreams1.jpg" /></a>
             <a href="dreams/dreams.html"><img class="Dreams" src="images/Dreams3.jpg" /></a>
             <a href="dreams/dreams.html"><img class="Dreams" src="images/Dreams2.jpg" /></a>
 
 
-            <p id="two" class="Projecttext2">Material Nightmare</p><br>
+            <p id="three" class="Projecttext">Material Nightmare</p><br>
             <a href="nightmare/nightmare.html"><img class="Nightmare" src="images/Tabu2.jpg"/></a>
             <a href="nightmare/nightmare.html"><img class="Nightmare" src="images/Tabu4.jpg"/></a>
             <a href="nightmare/nightmare.html"><img class="Nightmare" src="images/Tabu1.jpg"/></a>
 
-            <p id="three" class="Projecttext2">PlusMinus</p><br>
+            <p id="four" class="Projecttext">PlusMinus</p><br>
             <a href="plusminus/plusminus.html"> <img class="PlusMinus" src="images/Plusminus1.jpg"/> </a>
 
-            <p id="four" class="Projecttext2">Shaver</p><br>
-            <a href="shaver/shaver.html"><img class="Shaver" src="images/Razor1.jpg"/></a>
 
 
 			  </div>
@@ -79,31 +85,28 @@
   </body>
 
 <script>
+
+
+
+
 var scrollOffset = 0;
 function setOffset(x) {
-    if (x.matches) { // If media query matches
-        scrollOffset = 40;
-    } else {
-        scrollOffset = 0;
-    }
-}
-  var scrollOffset = 0;
-function setOffset(x) {
-    if (id="one") { // If media query matches
-        scrollOffset = 100;
-    } else {
-        scrollOffset = 0;
-    }
-}
-  
-  
+	if (id="one") { // If media query matches
+			scrollOffset = 0;
+		}	else {
+					scrollOffset = 0;
+	}
+	}
+
+
+
 var mq_mobileScreenWidth = window.matchMedia("(max-width: 640px)")
 setOffset(mq_mobileScreenWidth)
 mq_mobileScreenWidth.addListener(setOffset)
-  
+
 $( "#nav-mob" ).load( "./nav-mob.html", function() {
     $( "#nav" ).load( "./nav.html" , function() {
-      
+
         $('a[href*="#"]:not([href="#"])').click(function() {
             if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'')
                 || location.hostname == this.hostname) {
@@ -113,15 +116,18 @@ $( "#nav-mob" ).load( "./nav-mob.html", function() {
                      if (target.offset() && target.offset().top){
                        $('html,body').animate({
                            scrollTop: target.offset().top - scrollOffset
-                      }, 900);
+                      }, 1000);
                      }
                     return false;
-                      
+
                 }
             }
        });
     });
 });
+
+
+
 </script>
 
 </html>

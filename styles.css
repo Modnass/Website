@@ -5,6 +5,13 @@
 	border: 0px solid black;
 }
 
+p #two,
+p #one,
+p #three,
+p #four {
+	margin-block-start: 0em;
+
+}
 .MenuItems a:link,a:visited{
 	text-decoration: none;
 	color:#bababa;
@@ -82,7 +89,7 @@ body{
   max-width:100%;
   height:auto;
   z-index:-2;
-  
+
 	/* padding-bottom:5em; */
 }
 
@@ -119,15 +126,15 @@ a:hover .Shaver{
 }
 
 #menu-icon {
-    
+
 	display: none;
 	width: 15px;
 	height: 15px;
 	background:url(https://cdn.glitch.com/965101d1-f29e-4097-b3f3-b287be791280%2Fhamburger-menu-icon.png?1542558424258) center;
   background-size:15px 15px;
   background-repeat: no-repeat;
-  
-  
+
+
 }
 
 a[href*="instagram.com/"] {
@@ -139,7 +146,7 @@ padding-left:19px;
 
 
 @media only screen and (max-width: 850px) {
-  
+
   .logo {
     display:block;
     position:absolute;
@@ -153,18 +160,19 @@ padding-left:19px;
     color: #000;
     /*float: left;*/
   }
-  
-  a[href*="instagram.com/"] {
+
+
+  a[href*="instagram://user?username=materialnightmare"] {
 background:url(glyph-logo_May2016.png) no-repeat left center;
   background-size:18px;
-padding-left:19px;
+margin-left:14px;
   font-size:40px;
 }
-  
+
   .Menu {
         display: none;
     }
-  
+
   .Content{
     margin-top:0px;
   }
@@ -172,11 +180,11 @@ padding-left:19px;
   padding-top:60px;
   margin-left:18px;
   }
-  
+
   .Projecttext2{
   padding-top:20px;
   }
-  
+
   .nav-mob{
     position: fixed;
     width: 100%;
@@ -184,8 +192,8 @@ padding-left:19px;
     background-color: #fff;
     z-index: 2;
   }
-  
-  
+
+
 }
 
 
@@ -194,6 +202,14 @@ padding-left:19px;
 /* Mobile Styles */
 @media only screen and (max-device-width: 975px) {
 
+#instamobile {
+background:url(glyph-logo_May2016.png) no-repeat left center;
+  background-size:18px;
+    background-position:4%;
+padding-left:100px;
+  font-size:40px;
+}
+
   a[href*="instagram.com/"] {
 background:url(glyph-logo_May2016.png) no-repeat left center;
   background-size:18px;
@@ -201,7 +217,7 @@ background:url(glyph-logo_May2016.png) no-repeat left center;
 padding-left:30px;
   font-size:40px;
 }
-  
+
   .logo {
     display:block;
   position:absolute;
@@ -215,12 +231,12 @@ padding-left:30px;
   color: #000;
   /*float: left;*/
 }
-  
-  
+
+
 .Content{
   width:100%;
   }
-  
+
   .Dreams,
   .Nightmare,
   .PlusMinus,
@@ -229,23 +245,23 @@ padding-left:30px;
   max-width:100%;
   height:auto;
   }
-  
+
   .Shaver{
 	padding-bottom: 120px;
 }
-  
-  
+
+
   #menu-icon {
 
-      
+
 		display:inline-block;
 
 	}
-    
+
   .Menu {
       display: none;
   }
-  
+
   .nav-mob{
     position: fixed;
     width: 100%;
@@ -255,4 +271,3 @@ padding-left:30px;
   }
 
 }
-
