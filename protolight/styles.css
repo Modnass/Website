@@ -33,7 +33,7 @@ body{
     z-index: 2;
     height: 80px;
     max-width:1600px;
-
+    
 }
 
 .back a{
@@ -118,7 +118,7 @@ body{
 
 /* Mobile Styles */
 @media only screen and (max-device-width: 400px) {
-
+  
   .Content{
     width:100%;
     display:flex;
@@ -130,17 +130,15 @@ body{
     width:100%;
     max-width:1000px;
   }
-
+  
   .dreams{
     width:100%;
   }
-
-.texttop,
-  .text{
-    padding-left:20px;
-    padding-right:20px;
+  
+  .content-text{
+    padding:20px;
     font-size:4em;
-
+  
 }
     .back{
     position: fixed;
@@ -153,9 +151,9 @@ body{
     z-index: 2;
     height: 8em;
       max-width:none;
-
+    
 }
-
+  
   .back a{
     top:0.9em;
     left:18px;
@@ -163,35 +161,35 @@ body{
   text-decoration:none;
   line-height: 20px;
 }
+  
 
-
-
-
-
-
+  
+  
+  
+  
 }
 
 /* Tablet Styles */
 @media only screen and (min-device-width: 401px) and (max-device-width: 960px) {
-
+  
  .Content{
     width:100%;
     display:flex;
     flex-direction:column;
     align-items:center;
   }
-
+  
   .dreams{
     width:100%;
     height:auto;
   }
-.texttop
-  .text{
+  
+  .content-text{
     padding-left:10px;
     padding-right:10px;
-
+  
 }
-
+  
       .back{
     position: fixed;
     top:0px;
@@ -203,9 +201,9 @@ body{
     z-index: 2;
     height: 5em;
       max-width:none;
-
+    
 }
-
+  
   .back a{
     top:0.9em;
     left:18px;
